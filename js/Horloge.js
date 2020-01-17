@@ -13,9 +13,12 @@ export default class Horloge {
 
         
         this.horlogeFond.addEventListener("click", () => {
-            this.aiguille[0].style.backgroundColor = this.couleurAlea()
-            this.aiguille[1].style.backgroundColor = this.couleurAlea()
-            this.aiguille[2].style.backgroundColor = this.couleurAlea()
+            for (let uneAiguille of this.aiguille){
+                uneAiguille.style.backgroundColor = this.couleurAlea()
+            }
+            // this.aiguille[0].style.backgroundColor = this.couleurAlea()
+            // this.aiguille[1].style.backgroundColor = this.couleurAlea()
+            // this.aiguille[2].style.backgroundColor = this.couleurAlea()
 
         })
         
